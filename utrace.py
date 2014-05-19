@@ -11,8 +11,10 @@ from xml.etree import ElementTree as ET
 import requests
 
 
-def utrace(query):
-    url = 'http://xml.utrace.de/?query=' + query
+UTRACE_ORIGIN = 'http://xml.utrace.de'
+
+def utrace(query, origin=UTRACE_ORIGIN):
+    url = origin + '/?query=' + query
     response = requests.get(url).text
     xml_root = ET.fromstring(response)
     results = []

@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "utrace",
-    version = "1.0.0",
+    version = "1.1.0",
     url = 'https://github.com/ondrejsika/python-utrace',
     license = 'MIT',
     description = 'Python wrapper for utrace.de XML API.',
